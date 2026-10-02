@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const { getJwtSecret } = require('../config/authConfig');
 const { COOKIE_NAME } = require('../config/cookieConfig');
 
 /**
@@ -24,7 +25,7 @@ const authenticate = (req, res, next) => {
   }
 
   try {
-    const jwtSecret = process.env.JWT_SECRET || 'default_jwt_secret_key_for_dev_change_in_prod';
+    const jwtSecret = getJwtSecret();
     const decoded = jwt.verify(token, jwtSecret);
 
     if (!decoded || !decoded.userId || !decoded.role) {

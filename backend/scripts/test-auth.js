@@ -3,6 +3,11 @@
  * Authentication and Role-Based Access Control (RBAC)
  */
 require('dotenv').config();
+
+if (!process.env.JWT_SECRET) {
+  process.env.JWT_SECRET = 'test_jwt_secret_key_for_testing_only_not_for_prod';
+}
+
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { validateRegister, validateLogin, validateChangePassword } = require('../src/validators/authValidator');

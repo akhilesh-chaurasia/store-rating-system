@@ -98,8 +98,8 @@ const login = async (req, res, next) => {
     }
 
     // 3. Generate JWT containing only necessary identifiers
-    const jwtSecret = process.env.JWT_SECRET || 'default_jwt_secret_key_for_dev_change_in_prod';
-    const jwtExpiresIn = process.env.JWT_EXPIRES_IN || '1d';
+    const jwtSecret = getJwtSecret();
+    const jwtExpiresIn = getJwtExpiresIn();
 
     const token = jwt.sign(
       {
