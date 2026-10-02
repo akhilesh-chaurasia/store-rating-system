@@ -7,7 +7,8 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "db:verify": "node scripts/verify-db.js",
-    "test:auth": "node scripts/test-auth.js"
+    "test:auth": "node scripts/test-auth.js",
+    "test:admin": "node scripts/test-admin-dashboard.js"
   },
   "keywords": [],
   "author": "",
