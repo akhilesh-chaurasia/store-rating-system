@@ -8,7 +8,9 @@
     "dev": "node --watch src/server.js",
     "db:verify": "node scripts/verify-db.js",
     "test:auth": "node scripts/test-auth.js",
-    "test:admin": "node scripts/test-admin-dashboard.js"
+    "test:admin": "node scripts/test-admin-dashboard.js",
+    "test:admin-users": "node scripts/test-admin-users.js",
+    "test:admin-stores": "node scripts/test-admin-stores.js"
   },
   "keywords": [],
   "author": "",
