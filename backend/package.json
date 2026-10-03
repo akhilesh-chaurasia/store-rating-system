@@ -10,7 +10,8 @@
     "test:auth": "node scripts/test-auth.js",
     "test:admin": "node scripts/test-admin-dashboard.js",
     "test:admin-users": "node scripts/test-admin-users.js",
-    "test:admin-stores": "node scripts/test-admin-stores.js"
+    "test:admin-stores": "node scripts/test-admin-stores.js",
+    "test:user": "node scripts/test-user.js"
   },
   "keywords": [],
   "author": "",
