@@ -7,6 +7,7 @@ const healthRoutes = require('./routes/health.routes');
 const authRoutes = require('./routes/auth.routes');
 const adminRoutes = require('./routes/admin.routes');
 const storeRoutes = require('./routes/store.routes');
+const ownerRoutes = require('./routes/owner.routes');
 const notFoundHandler = require('./middleware/notFoundHandler');
 const errorHandler = require('./middleware/errorHandler');
 
@@ -32,6 +33,7 @@ app.use('/api', healthRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/stores', storeRoutes);
+app.use('/api/owner', ownerRoutes);
 
 // 404 handler for unknown routes
 app.use(notFoundHandler);

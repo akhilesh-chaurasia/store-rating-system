@@ -11,7 +11,8 @@
     "test:admin": "node scripts/test-admin-dashboard.js",
     "test:admin-users": "node scripts/test-admin-users.js",
     "test:admin-stores": "node scripts/test-admin-stores.js",
-    "test:user": "node scripts/test-user.js"
+    "test:user": "node scripts/test-user.js",
+    "test:owner": "node scripts/test-owner.js"
   },
   "keywords": [],
   "author": "",
